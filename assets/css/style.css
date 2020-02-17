@@ -1,0 +1,431 @@
+
+
+/* general rules 
+***********************************/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'cairo', sans-serif;
+    overflow: auto;
+}
+.fa-arrow-right, .fa-arrow-left, 
+.fa-angle-right, .fa-angle-left {
+    cursor: pointer;
+}
+/* End general rules 
+***********************************/
+
+
+
+/* Start Common Styles 
+***********************************/
+/* 1-section heading */
+.intro {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.line {
+    display: block;
+    width: 55px;
+    height: 2px;
+    background-color: #09c;
+    margin: 15px auto;
+}
+/* heading vertical line */
+.ver-line {
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background-color: #09c;
+}
+/* End Common Styles 
+***********************************/
+.loader {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.ring {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    /* transform: translate(-50%, -50%); */
+    color: #ff0;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px #fff000;
+}
+
+
+ /* Start navbar 
+ **********************************/
+ .nav-link {
+     font-size: 18px;
+ }
+ /* End navbar 
+ **********************************/
+
+
+
+ /* Start Header 
+ **********************************/
+.m {
+    margin-left: 0;
+}
+.header-back-image {
+    background-image: url(../images/header-side.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+.header-text {
+    margin-top: 8rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+ /* End Header 
+***********************************/
+
+
+
+ /* Start Who
+***********************************/
+.who-text {
+    margin-top: 120px;
+    font-size: 21px;
+    word-spacing: 3px;
+    line-height: 1.7;
+    letter-spacing: 1.1px;
+}
+ /* End Who
+***********************************/
+
+
+
+ /* Start offerings
+***********************************/
+.offer {
+    background-image: url(../images/we-offer.png);
+    background-size: cover;
+}
+.slide {
+    margin: 20px;
+}
+.slide img {
+    margin: auto;
+}
+.offer-item {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px 5px 30px;
+}
+ /* End offerings
+***********************************/
+
+
+
+ /* Start our-work
+***********************************/
+.work {
+    background-color: #ccc;
+}
+.work .col-lg-4 {
+    padding: 10px 50px;
+}
+.work-item {
+    border-radius: 20px;
+    background-color: #fff;
+}
+.work img {
+    border-radius: 20px;
+}
+ /* End our-work
+***********************************/
+
+
+
+/* Start Web 
+***********************************/
+
+.web .col-md-6 {
+    padding: 30px 90px;
+}
+.web-item {
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #777, -1px -1px 5px #777;
+}
+.web-item img {
+    border-radius: 20px;
+}
+/* End Web 
+***********************************/
+
+
+
+/* Start Our-Clients 
+***********************************/
+.clients {
+    background-image: url(../images/our-client-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.clients-item img {
+    width: 60%;
+}
+/* End Our-Clients 
+***********************************/
+
+
+
+/* Start Footer 
+***********************************/
+footer {
+    background-image: url(../images/footer.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+footer img {
+    width: 40%;
+    height: auto;
+}
+footer .col-md-6 {
+    padding: 75px 0;
+}
+/* End Footer 
+***********************************/
+
+
+
+/* =====================================our-work-page=======================================*/
+
+.page-name-work::after {
+    content: "أعمالنا";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+/* =====================================article-page=======================================*/
+
+.page-name-article::after {
+    content: "المقالات";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+/* =====================================first-app-page=======================================*/
+
+.page-name-app::after {
+    content: "تطبيق وان";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.page-name-detail::after {
+    content: "تفاصيل المشروع";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.detail-bg {
+    background-image: url(../images/details-bg.png);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+    letter-spacing: 1.2px;
+}
+
+.page-name-tour::after {
+    content: "خدلك لفة";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card-carousel .my-card {
+    height: 20rem;
+    width: 12rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898);
+    transition: 1s;
+  }
+  
+  .card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+  }
+  
+  .card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+  }
+  .card-carousel .my-card:nth-child(0):before {
+    content: '0';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .card-carousel .my-card:nth-child(1):before {
+    content: '1';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .card-carousel .my-card:nth-child(2):before {
+    content: '2';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .card-carousel .my-card:nth-child(3):before {
+    content: '3';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .card-carousel .my-card:nth-child(4):before {
+    content: '4';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+/* =====================================after-page=======================================*/
+
+.page-name-after::after {
+    content: "بعد 10 سنوات تحديثات ويندوز توشك على الإنتهاء";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.after-bg {
+    background-image: url(../images/bg30-Ar1web.gif);
+}
+.after {
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #888, -3px -3px 7px #888;
+    background-color: #fff;
+}
+.after img {
+    margin-top: 45px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 7px #888;
+}
+.after-text {
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    line-height: 2.7;
+    padding: 25px 50px;
+}
+
+/* =====================================Media-Query=======================================*/
+
+@media (max-width: 992px) {
+    .web .col-md-6 {
+        padding: 30px 40px;
+    }
+}
+@media (max-width: 768px) {
+    .who-text {
+        margin-top: 60px;
+        font-size: 20px;
+        word-spacing: 3px;
+        line-height: 1.7;
+        letter-spacing: 1.1px;
+    }
+    .web .col-md-6 {
+        padding: 30px 50px;
+    }
+}
+@media (max-width: 600px) {
+    footer .col-md-6 {
+        margin-right: 100px;
+    }
+}
